@@ -23,7 +23,7 @@ const DICT = {
   le:['the','definite article','Used before a masculine singular noun.'],la:['the','definite article','Used before a feminine singular noun.'],les:['the','definite article','Plural form of “the”.'],un:['a / one','article','Masculine singular indefinite article.'],une:['a / one','article','Feminine singular indefinite article.'],des:['some','article','Often marks an indefinite plural.'],est:['is','verb','Form of être (to be), third-person singular, present tense.'],sont:['are','verb','Form of être (to be), third-person plural.'],et:['and','conjunction','Connects words or ideas.'],ou:['or','conjunction','Introduces an alternative.'],mais:['but','conjunction','Introduces a contrast.'],pour:['for / to','preposition','Meaning depends on the phrase.'],avec:['with','preposition','Shows accompaniment.'],sans:['without','preposition','Shows absence.'],dans:['in / inside','preposition','Indicates a place or situation.'],sur:['on / about','preposition','Can express location or subject.'],près:['near','adverb / preposition','Often used as “près de” (near).'],sous:['under','preposition','Indicates position.'],de:['of / from','preposition','A very common French preposition.'],du:['of the / some','contraction','Combination of de + le.'],au:['to the / at the','contraction','Combination of à + le.'],aux:['to the / at the','contraction','Combination of à + les.'],à:['at / to','preposition','Used with places, times, and indirect objects.'],il:['he / it','pronoun','Masculine third-person subject.'],elle:['she / it','pronoun','Feminine third-person subject.'],ils:['they','pronoun','Masculine or mixed-gender plural.'],elles:['they','pronoun','Feminine plural.'],je:['I','pronoun','First-person singular subject.'],tu:['you','pronoun','Informal singular subject.'],vous:['you','pronoun','Formal singular or plural subject.'],nous:['we','pronoun','First-person plural subject.'],ce:['this / that / it','determiner / pronoun','Context determines the role.'],cette:['this / that','determiner','Feminine singular.'],ces:['these / those','determiner','Plural.'],"c'est":['it is / that is','expression','Contraction of ce + est.'],que:['that / which','conjunction / pronoun','Introduces many types of clauses.'],qui:['who / which','pronoun','Used as a relative or question word.'],où:['where','adverb','Used for place or time.'],quand:['when','adverb','Question word and conjunction.'],comment:['how','adverb','Asks about manner.'],pourquoi:['why','adverb','Asks for the reason.'],bonjour:['hello / good morning','greeting','Standard greeting during the day.'],bonsoir:['good evening','greeting','Used in the evening.'],merci:['thank you','expression','A common way to express gratitude.'],oui:['yes','adverb','Affirmative answer.'],non:['no','adverb','Negative answer.'],bien:['well / good','adverb','A frequent adverb.'],très:['very','adverb','Used for emphasis.'],plus:['more','adverb','May be pronounced differently in various contexts.'],moins:['less','adverb','Used for comparisons.'],souvent:['often','adverb','Indicates frequency.'],toujours:['always / still','adverb','Meaning depends on context.'],jamais:['never / ever','adverb','Often follows “ne” in negatives.'],"aujourd'hui":['today','adverb','Means the current day.'],demain:['tomorrow','adverb','The day after today.'],hier:['yesterday','adverb','The day before today.'],matin:['morning','noun','Masculine noun: le matin.'],soir:['evening','noun','Masculine noun: le soir.'],semaine:['week','noun','Feminine noun: la semaine.'],jour:['day','noun','Masculine noun: le jour.'],temps:['time / weather','noun','Masculine noun with several meanings.'],maison:['house / home','noun','Feminine noun: la maison.'],ville:['city / town','noun','Feminine noun: la ville.'],pays:['country','noun','Masculine noun: le pays.'],canada:['Canada','proper noun','A country in North America.'],vaste:['vast / extensive','adjective','Describes something very large in size or scope.'],diversifié:['diversified / diverse','adjective','Masculine form; feminine: diversifiée.'],diversifiée:['diversified / diverse','adjective','Feminine form of diversifié.'],connu:['known','adjective / past participle','From connaître (to know).'],connue:['known','adjective / past participle','Feminine form of connu.'],magnifiques:['magnificent / beautiful','adjective','Plural of magnifique.'],paysages:['landscapes / scenery','noun','Plural of le paysage.'],naturels:['natural','adjective','Masculine plural of naturel.'],habitants:['inhabitants / residents','noun','People who live in a place.'],accueillants:['welcoming / friendly','adjective','Masculine plural of accueillant.'],grande:['great / big / high','adjective','Feminine form of grand.'],qualité:['quality','noun','Feminine noun: la qualité.'],vie:['life','noun','Feminine noun: la vie.'],compte:['has / counts','verb','From compter; “il compte” can mean “it has”.'],dix:['ten','number','The number 10.'],provinces:['provinces','noun','Plural of province.'],trois:['three','number','The number 3.'],territoires:['territories','noun','Plural of territoire.'],population:['population','noun','Feminine noun: la population.'],vient:['comes','verb','From venir, third-person singular present.'],nombreuses:['numerous / many','adjective','Feminine plural form.'],cultures:['cultures','noun','Plural of culture.'],différentes:['different','adjective','Feminine plural of différent.'],reconnu:['recognized','past participle','From reconnaître.'],engagement:['commitment','noun','Masculine noun: l’engagement.'],envers:['toward / towards','preposition','Often expresses responsibility or attitude.'],inclusion:['inclusion','noun','Feminine noun: l’inclusion.'],multiculturalisme:['multiculturalism','noun','Masculine noun.'],protection:['protection','noun','Feminine noun.'],environnement:['environment','noun','Masculine noun: l’environnement.'],bonjour:['hello','greeting','Friendly standard greeting.'],voudrais:['would like','verb','Conditional form of vouloir (to want).'],visiter:['to visit','verb','Infinitive.'],petit:['small / little','adjective','Masculine singular form.'],village:['village','noun','Masculine noun.'],montagne:['mountain','noun','Feminine noun.'],bonne:['good','adjective','Feminine of bon.'],idée:['idea','noun','Feminine noun.'],peux:['can','verb','From pouvoir.'],venir:['to come','verb','Infinitive.'],bien:['well / indeed','adverb','In “bien sûr”: of course.'],sûr:['sure / certain','adjective','In “bien sûr”: of course.'],pourrions:['could','verb','Conditional, first-person plural, from pouvoir.'],partir:['to leave','verb','Infinitive.'],samedi:['Saturday','noun','Day of the week.'],parfait:['perfect','adjective','Masculine form.'],vais:['am going to','verb','From aller.'],préparer:['to prepare','verb','Infinitive.'],quelque:['some / something','determiner','In “quelque chose”: something.'],chose:['thing','noun','Feminine noun.'],manger:['to eat','verb','Infinitive.'],voyage:['trip / journey','noun','Masculine noun.']
 };
 const el = id => document.getElementById(id);
-const UI = Object.fromEntries(['sourceInput','charCount','translateBtn','translateBtnText','status','frenchText','englishText','sentenceRows','mainPlayBtn','timeLabel','seekInput','listenSelect','volumeInput','speedInput','speedLabel','voiceSelect','wordPopup','wordTitle','wordMeaning','wordExtra','wordExampleFrom','wordExampleTo','wordSpeakBtn','modalBackdrop','modalTitle','modalContent','connectionTag','fileInput','draftLabel','wordTipCheck','highlightCheck','bilingualCheck','sentenceCard','textColumns'].map(id=>[id,el(id)]));
+const UI = Object.fromEntries(['sourceInput','charCount','translateBtn','translateBtnText','status','frenchText','englishText','sentenceRows','mainPlayBtn','timeLabel','seekInput','listenSelect','volumeInput','speedInput','speedLabel','voiceSelect','voiceNotice','voiceFieldTitle','voicePreviewBtn','wordPopup','wordTitle','wordMeaning','wordExtra','wordExampleFrom','wordExampleTo','wordSpeakBtn','modalBackdrop','modalTitle','modalContent','connectionTag','fileInput','draftLabel','wordTipCheck','highlightCheck','bilingualCheck','sentenceCard','textColumns'].map(id=>[id,el(id)]));
 const KEYS = {draft:'tl_fr_en_draft_v1',settings:'tl_fr_en_settings_v1',cache:'tl_fr_en_cache_v1',history:'tl_fr_en_history_v1'};
 const getJson = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
 const setJson = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; } };
@@ -162,16 +162,37 @@ function updateTime(){const total=totalSeconds();const played=state.playing?(com
   UI.seekInput.value=total?Math.round(100*Math.min(1,played/total)):0;
   UI.mainPlayBtn.textContent=state.playing?'❚❚':'▶';UI.mainPlayBtn.title=state.playing?'Pause audio':state.paused?'Resume from current sentence':'Play audio';
 }
-function chosenVoice(lang,alternation=0){const matching=state.voices.filter(v=>v.lang.toLowerCase().startsWith(lang));
-  const selected=lang==='fr'?state.settings.voiceFr:state.settings.voiceEn;
-  let choice=matching.find(v=>v.voiceURI===selected)||matching[0]||null;
-  if(alternation%2&&matching.length>1)choice=matching.find(v=>v!==choice)||choice;
-  return choice;
+function voicesFor(lang){
+  return state.voices.filter(v=>String(v.lang||'').toLowerCase().startsWith(lang));
 }
-function refreshVoices(){if(!('speechSynthesis' in window))return;state.voices=speechSynthesis.getVoices();const previous=UI.voiceSelect.value;
-  UI.voiceSelect.replaceChildren();const auto=document.createElement('option');auto.value='';auto.textContent='Default French voice';UI.voiceSelect.append(auto);
-  state.voices.filter(v=>v.lang.toLowerCase().startsWith('fr')).forEach(v=>{const o=document.createElement('option');o.value=v.voiceURI;o.textContent=`${v.name} (${v.lang})`;UI.voiceSelect.append(o);});
-  UI.voiceSelect.value=state.settings.voiceFr||previous||'';
+function voiceKey(voice){return String(voice.voiceURI||`${voice.name}@${voice.lang}`);}
+function chosenVoice(lang,alternation=0){
+  const matching=voicesFor(lang);
+  const selected=lang==='fr'?state.settings.voiceFr:state.settings.voiceEn;
+  // A user-selected speaker ALWAYS takes priority, even in Conversation mode.
+  const explicit=matching.find(v=>voiceKey(v)===selected);
+  if(explicit)return explicit;
+  if(!matching.length)return null;
+  return matching[alternation%matching.length]||matching[0];
+}
+function refreshVoices(){
+  if(!('speechSynthesis' in window))return;
+  try{state.voices=speechSynthesis.getVoices()||[];}catch{state.voices=[];}
+  const lang=state.side, matching=voicesFor(lang), name=lang==='fr'?'French':'English';
+  const selected=lang==='fr'?state.settings.voiceFr:state.settings.voiceEn;
+  UI.voiceFieldTitle.textContent=`Voice (${lang.toUpperCase()})`;
+  UI.voiceSelect.setAttribute('aria-label',`${name} speaker`);
+  UI.voiceSelect.replaceChildren();
+  UI.voiceSelect.add(new Option(`System default (${name})`,''));
+  matching.forEach(v=>UI.voiceSelect.add(new Option(`${v.name} (${v.lang})`,voiceKey(v))));
+  UI.voiceSelect.value=matching.some(v=>voiceKey(v)===selected)?selected:'';
+  if(!matching.length){
+    UI.voiceNotice.textContent=`No ${name} voices listed. System voice will be used; install more voices in device settings.`;
+  }else if(matching.length===1){
+    UI.voiceNotice.textContent=`One ${name} speaker available on this device.`;
+  }else{
+    UI.voiceNotice.textContent=`${matching.length} ${name} speakers available. Tap Test voice to compare.`;
+  }
 }
 function resetTicker(){clearInterval(state.timer);state.timer=setInterval(updateTime,200);}
 function stopSpeech(clear=true){state.token++;clearInterval(state.timer);state.timer=null;
@@ -209,6 +230,21 @@ function playWordOnly(word,side){
   // A word pronunciation interrupts a passage, like tapping a dictionary speaker.
   stopSpeech();const u=new SpeechSynthesisUtterance(word);u.lang=side==='fr'?'fr-FR':'en-US';u.rate=Math.max(.7,state.settings.rate*.85);u.volume=state.settings.volume;u.voice=chosenVoice(side);
   try{speechSynthesis.speak(u);}catch{report('Could not pronounce the selected word.','bad');}
+}
+function previewVoice(){
+  if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window))return report('Speech not available on this device.','bad');
+  stopSpeech();
+  const lang=state.side;
+  const phrase=lang==='fr'? 'Bonjour ! Voici un exemple de cette voix.' : 'Hello! This is a sample of this voice.';
+  const utter=new SpeechSynthesisUtterance(phrase);
+  utter.lang=lang==='fr'?'fr-FR':'en-US';
+  utter.rate=state.settings.rate;
+  utter.volume=state.settings.volume;
+  const voice=chosenVoice(lang);
+  if(voice)utter.voice=voice;
+  utter.onerror=(e)=>{if(!['canceled','interrupted'].includes(e.error))report('This speaker is unavailable. Try System default or another voice.','bad');};
+  try{speechSynthesis.speak(utter);report(`Testing ${voice?.name||'system'} speaker at ${state.settings.rate.toFixed(2)}× speed.`,'good');}
+  catch(e){report('Could not test voice: '+friendly(e),'bad');}
 }
 function hideWord(){UI.wordPopup.hidden=true;state.wordToken++;state.lastWord=null;}
 async function showWord(ev,button){
@@ -315,10 +351,38 @@ function initHandlers(){
   el('clearBtn').onclick=()=>{cancelPending();stopSpeech();UI.sourceInput.value='';countChars();setJson(KEYS.draft,'');state.original='';state.segments=[];state.translationReady=false;state.conversation=false;renderAll();UI.draftLabel.textContent='';report('Input cleared.');};
   el('sampleBtn').onclick=()=>{cancelPending();stopSpeech();state.segments=SAMPLE.map(([fr,en])=>({fr,en}));state.original=originalSample;state.conversation=false;state.isSample=true;state.translationReady=true;UI.sourceInput.value=originalSample;countChars();setJson(KEYS.draft,originalSample);renderAll();UI.draftLabel.textContent='';report('French example loaded. Tap any word or press ▶.','good');};
   UI.sourceInput.addEventListener('input',()=>{countChars();setJson(KEYS.draft,UI.sourceInput.value);UI.draftLabel.textContent=UI.sourceInput.value.trim()!==state.original?'· unsent changes':'';});
-  UI.listenSelect.onchange=()=>{stopSpeech();state.side=UI.listenSelect.value;state.settings.side=state.side;setJson(KEYS.settings,state.settings);updateTime();};
-  UI.speedInput.oninput=()=>{state.settings.rate=Number(UI.speedInput.value);UI.speedLabel.textContent=state.settings.rate.toFixed(1)+'×';setJson(KEYS.settings,state.settings);updateTime();};
+  UI.listenSelect.onchange=()=>{
+    const wasPlaying=state.playing,idx=state.current;
+    stopSpeech();state.side=UI.listenSelect.value;state.settings.side=state.side;
+    setJson(KEYS.settings,state.settings);refreshVoices();
+    if(wasPlaying)playAt(idx);else updateTime();
+  };
+  let speedRestartTimer=null;
+  const restartForSpeed=()=>{
+    clearTimeout(speedRestartTimer);speedRestartTimer=null;
+    // Web Speech reads .rate when an utterance starts, not necessarily after.
+    // Restart the *current* sentence so that changing speed has an audible effect.
+    if(state.playing){const i=state.current;playAt(i);report(`Speed changed to ${state.settings.rate.toFixed(2)}×. Replaying the current sentence.`,'good');}
+  };
+  UI.speedInput.oninput=()=>{
+    state.settings.rate=Number(UI.speedInput.value);
+    UI.speedLabel.textContent=state.settings.rate.toFixed(2).replace(/0$/,'')+'×';
+    setJson(KEYS.settings,state.settings);updateTime();
+    clearTimeout(speedRestartTimer);
+    if(state.playing)speedRestartTimer=setTimeout(restartForSpeed,350);
+  };
+  UI.speedInput.onchange=()=>{if(speedRestartTimer!==null)restartForSpeed();};
   UI.volumeInput.oninput=()=>{state.settings.volume=Number(UI.volumeInput.value);setJson(KEYS.settings,state.settings);};
-  UI.voiceSelect.onchange=()=>{state.settings.voiceFr=UI.voiceSelect.value;setJson(KEYS.settings,state.settings);if(state.playing)playAt(state.current);};
+  UI.voiceSelect.onchange=()=>{
+    if(state.side==='fr')state.settings.voiceFr=UI.voiceSelect.value;
+    else state.settings.voiceEn=UI.voiceSelect.value;
+    setJson(KEYS.settings,state.settings);
+    const name=voicesFor(state.side).find(v=>voiceKey(v)===UI.voiceSelect.value)?.name||'system default';
+    if(state.playing){const i=state.current;playAt(i);}
+    report(`Speaker changed to ${name}. ${state.playing?'Replaying the current sentence.':'Tap Test voice to hear it.'}`,'good');
+  };
+  UI.voicePreviewBtn.onclick=previewVoice;
+  UI.voiceSelect.addEventListener('focus',refreshVoices);
   UI.seekInput.onchange=()=>{const fraction=Number(UI.seekInput.value)/100,total=totalSeconds();let sum=0,idx=0;
     for(let i=0;i<state.segments.length;i++){sum+=est(state.segments[i][state.side]);if(sum>=total*fraction){idx=i;break;}}
     playAt(idx);
@@ -341,11 +405,11 @@ function initHandlers(){
 }
 function init(){seedSampleCache();initHandlers();
   if(!('speechSynthesis' in window)){report('Speech playback is unavailable in this browser. Translation still works.','bad');}
-  else{refreshVoices();if('onvoiceschanged' in speechSynthesis)speechSynthesis.addEventListener('voiceschanged',refreshVoices);}
+  else{refreshVoices();if('onvoiceschanged' in speechSynthesis)speechSynthesis.addEventListener('voiceschanged',refreshVoices);[250,900,2400].forEach(ms=>setTimeout(refreshVoices,ms));}
   const draft=getJson(KEYS.draft,null);
   if(typeof draft==='string'&&draft.trim() && draft!==originalSample){UI.sourceInput.value=draft;state.original=originalSample;UI.draftLabel.textContent='· unsent changes';report('Your draft was restored. Press Translate to update the reading panels.');}
   else UI.sourceInput.value=originalSample;
-  countChars();applySettings();UI.connectionTag.textContent=navigator.onLine?'● Online':'● Offline: saved text and speech only';
+  countChars();applySettings();refreshVoices();UI.connectionTag.textContent=navigator.onLine?'● Online':'● Offline: saved text and speech only';
   if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('./sw.js').catch(()=>{});
   if(!UI.status.textContent)report('Sample ready · Tap French words to explore or press ▶ to listen.','good');
 }

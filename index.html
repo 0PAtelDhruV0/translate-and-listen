@@ -11,7 +11,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
   <link rel="icon" href="icons/icon-192.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1.1.0">
   <title>Translate & Listen · French → English</title>
 </head>
 <body>
@@ -43,7 +43,8 @@
       <div class="field-label">Original Language</div>
       <div class="select-look"><span class="flag">🇫🇷</span>French (Français) <span class="arrow">⌄</span></div>
       <div class="field-label">Voice Settings</div>
-      <label class="field-grid"><span>Voice</span><select id="voiceSelect" aria-label="French voice"><option value="">System French voice</option></select></label>
+      <label class="field-grid"><span id="voiceFieldTitle">Voice (FR)</span><select id="voiceSelect" aria-label="French speaker"><option value="">System default (French)</option></select></label>
+      <div class="voice-info-row"><span id="voiceNotice" role="status" aria-live="polite">Loading installed speakers…</span><button id="voicePreviewBtn" class="voice-test-btn" type="button">▶ Test voice</button></div>
       <label class="field-grid"><span>Speed</span><span class="range-inline"><input id="speedInput" type="range" min="0.65" max="1.5" step="0.05" value="1" aria-label="Speaking speed"><output id="speedLabel">1.0×</output></span></label>
       <button id="translateBtn" class="primary-btn"><span class="play-glyph">▶</span><span id="translateBtnText">Translate &amp; Generate Audio</span></button>
       <div class="section-title options-title">More Options</div>
@@ -80,6 +81,6 @@
 </div>
 <div id="modalBackdrop" class="modal-backdrop" hidden><section class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-header"><h2 id="modalTitle"></h2><button id="modalClose" class="popup-close" aria-label="Close">×</button></div><div id="modalContent"></div></section></div>
 <input id="fileInput" type="file" accept=".txt,.md,.csv,.pdf,.docx,.text,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
-<script src="app.js" defer></script>
+<script src="app.js?v=1.1.0" defer></script>
 </body>
 </html>
